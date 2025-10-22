@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quick Quiz — Organizational Communication</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Interactive quiz based on the Organizational Communication PDF.">
+</head>
+<body>
+  <header class="site-header sticky" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Org<span>Comm</span></a>
+      <nav class="nav" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="topics.html">Topics</a>
+        <a href="quiz.html">Quick Quiz</a>
+        <a href="Organizational Communication.pdf" download class="btn small">Download PDF</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main class="container quiz-page">
+    <h1>Quick Quiz</h1>
+    <p class="lead">Click an answer to get immediate feedback. Score at the end.</p>
+
+    <div id="quiz-list" class="quiz-list">
+      <!-- Q1 -->
+      <section class="quiz-card" data-qid="1">
+        <p class="q">1. Which is an example of formal communication?</p>
+        <div class="choices">
+          <button class="choice" data-correct="false">Casual chat by the water cooler</button>
+          <button class="choice" data-correct="true">Official memo from management</button>
+          <button class="choice" data-correct="false">Emoji-filled group chat</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </section>
+
+      <!-- Q2 -->
+      <section class="quiz-card" data-qid="2">
+        <p class="q">2. “I’ll get back to you” is an example of:</p>
+        <div class="choices">
+          <button class="choice" data-correct="true">Vague time phrasing</button>
+          <button class="choice" data-correct="false">Clear deadline</button>
+          <button class="choice" data-correct="false">Formal assignment</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </section>
+
+      <!-- Q3 -->
+      <section class="quiz-card" data-qid="3">
+        <p class="q">3. Which barrier is described as 'jargon and vague messages'?</p>
+        <div class="choices">
+          <button class="choice" data-correct="true">Semantic</button>
+          <button class="choice" data-correct="false">Physical</button>
+          <button class="choice" data-correct="false">Cultural</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </section>
+
+      <!-- Q4 -->
+      <section class="quiz-card" data-qid="4">
+        <p class="q">4. What does 'low-hanging fruit' mean?</p>
+        <div class="choices">
+          <button class="choice" data-correct="true">Easiest opportunities to achieve results quickly</button>
+          <button class="choice" data-correct="false">Major strategic goals</button>
+          <button class="choice" data-correct="false">A risky, ambitious project</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </section>
+
+      <!-- Q5 -->
+      <section class="quiz-card" data-qid="5">
+        <p class="q">5. Which of these is a practical tip to overcome barriers?</p>
+        <div class="choices">
+          <button class="choice" data-correct="false">Use more jargon</button>
+          <button class="choice" data-correct="true">Practice active listening</button>
+          <button class="choice" data-correct="false">Avoid feedback</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </section>
+    </div>
+
+    <div class="quiz-actions">
+      <button id="resetQuiz" class="btn small ghost">Reset Quiz</button>
+      <div id="quiz-score" class="score-panel" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-quiz"></span> Daryl John Milanes — Organizational Communication</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
